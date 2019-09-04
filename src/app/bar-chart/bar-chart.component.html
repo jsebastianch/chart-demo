@@ -2,7 +2,23 @@
   <div>
     <div style="display: block">
       <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
-        [legend]="barChartLegend" [chartType]="barChartType"[colors]="colors">
+        [legend]="barChartLegend" [chartType]="barChartType" [colors]="colors">
+      </canvas>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div style="display: block">
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" chartType="horizontalBar" >
+      </canvas>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div style="display: block">
+      <canvas baseChart [datasets]="stackedBarChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" chartType="bar" >
       </canvas>
     </div>
   </div>
