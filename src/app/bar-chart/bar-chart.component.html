@@ -1,4 +1,5 @@
 <div class="container">
+  <app-chartjs-menu></app-chartjs-menu>
   <div>
     <div style="display: block">
       <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
@@ -10,7 +11,7 @@
   <div class="mt-5">
     <div style="display: block">
       <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
-        [legend]="barChartLegend" chartType="horizontalBar" >
+        [legend]="barChartLegend" chartType="horizontalBar">
       </canvas>
     </div>
   </div>
@@ -18,7 +19,7 @@
   <div class="mt-5">
     <div style="display: block">
       <canvas baseChart [datasets]="stackedBarChartData" [labels]="barChartLabels" [options]="barChartOptions"
-        [legend]="barChartLegend" chartType="bar" >
+        [legend]="barChartLegend" chartType="bar">
       </canvas>
     </div>
   </div>

@@ -1,8 +1,6 @@
 <div class="container">
+  <app-chartjs-menu></app-chartjs-menu>
   <div style="display: block">
-    <canvas baseChart
-            [datasets]="radarChartData"
-            [labels]="radarChartLabels"
-            [chartType]="radarChartType"></canvas>
+    <canvas baseChart [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType"></canvas>
   </div>
 </div>

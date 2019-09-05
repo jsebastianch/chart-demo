@@ -18,8 +18,8 @@ export class LineChartComponent implements OnInit {
   };
   public lineChartColors: Color[] = [
     {
-      borderColor: 'black',
-      backgroundColor: 'rgba(255,0,0,0.3)',
+      borderColor: 'red',
+      backgroundColor: 'rgba(255, 255, 255, 0)',
     },
   ];
   public lineChartLegend = true;

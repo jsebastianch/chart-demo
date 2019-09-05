@@ -1,0 +1,45 @@
+<div class="container">
+  <app-kendo-menu></app-kendo-menu>
+  <kendo-chart>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="column" [data]="[1, 2, 3, 5]">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="column" [data]="[-1, -2, -3, -5]">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+
+  <h5 class="pt-3">Stacked</h5>
+  <kendo-chart>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="bar" [stack]="true" [data]="[1, 2, 3]">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="bar" [data]="[1, -1, 1]">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="bar" [data]="[1, -1, 1]">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+
+  <h5 class="pt-3">Stacked group</h5>
+  <kendo-chart>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="bar" [stack]="{ group: 'a' }" [data]="[1, 2, 3]">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="bar" [data]="[1, 1, 1]" [stack]="{ group: 'a' }">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="bar" [data]="[1, 1, 1]" [stack]="{ group: 'b' }">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+
+  <h5 class="pt-3">Stacked 100%</h5>
+  <kendo-chart>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="column" [stack]="{ type: '100%' }" [data]="[1, 2, 3, 5]">
+      </kendo-chart-series-item>
+      <kendo-chart-series-item type="column" [data]="[1, 1, 1, 1]">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+</div>
