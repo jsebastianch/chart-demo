@@ -18,6 +18,7 @@ import { KendoBubbleChartComponent } from './kendo-bubble-chart/kendo-bubble-cha
 import { KendoScatterChartComponent } from './kendo-scatter-chart/kendo-scatter-chart.component';
 import { KendoAreaChartComponent } from './kendo-area-chart/kendo-area-chart.component';
 import { KendoFunnelChartComponent } from './kendo-funnel-chart/kendo-funnel-chart.component';
+import { D3BarChartComponent } from './d3-bar-chart/d3-bar-chart.component';
 
 const routes: Routes = [
   { path: 'line-chart', component: LineChartComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
   { path: 'kendo-bubble-chart', component: KendoBubbleChartComponent },
   { path: 'kendo-scatter-chart', component: KendoScatterChartComponent },
   { path: 'kendo-area-chart', component: KendoAreaChartComponent },
-  { path: 'kendo-funnel-chart', component: KendoFunnelChartComponent }
+  { path: 'kendo-funnel-chart', component: KendoFunnelChartComponent },
+  { path: 'd3-bar-chart', component: D3BarChartComponent }
 ];
 
 @NgModule({

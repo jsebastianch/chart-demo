@@ -28,6 +28,7 @@ import { KendoBubbleChartComponent } from './kendo-bubble-chart/kendo-bubble-cha
 import { KendoScatterChartComponent } from './kendo-scatter-chart/kendo-scatter-chart.component';
 import { KendoAreaChartComponent } from './kendo-area-chart/kendo-area-chart.component';
 import { KendoFunnelChartComponent } from './kendo-funnel-chart/kendo-funnel-chart.component';
+import { D3BarChartComponent } from './d3-bar-chart/d3-bar-chart.component';
 
 
 
@@ -54,7 +55,8 @@ import { KendoFunnelChartComponent } from './kendo-funnel-chart/kendo-funnel-cha
     KendoBubbleChartComponent,
     KendoScatterChartComponent,
     KendoAreaChartComponent,
-    KendoFunnelChartComponent
+    KendoFunnelChartComponent,
+    D3BarChartComponent
   ],
   imports: [
     BrowserModule,
